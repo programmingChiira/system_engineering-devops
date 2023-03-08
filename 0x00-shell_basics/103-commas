@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap | awk 'BEGIN {ORS=", ";} {if ($0 != "./" && $0 != "../") print $0} END {print "\b\b\n"}'
+ls -a | grep -E '^[^.]|[.][^.].*$' | sort -df | tr '\n' ', ' | sed 's/,$/\n/'
