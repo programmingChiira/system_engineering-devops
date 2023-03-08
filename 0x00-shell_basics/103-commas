@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1ap | awk '{printf("%s,",$0)}' | sed 's/,$/\n/' | sed 's@^\./@./, @' | sed 's@/$@/, @' | sed 's/,[[:space:]]*/, /g' | tr -d '\n'
+ls -1ap | awk '{printf("%s,",$0)}' | sed 's/,$/\n/' | sed 's@^\./@./, @' | sed 's@/$@/, @' | sed 's/, /,/g' | sed 's/, $//' | tr -d '\n'
