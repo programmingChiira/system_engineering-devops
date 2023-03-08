@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | grep -E '^[^.]|[.][^.].*$' | sort -df | tr '\n' ', ' | sed 's/,$/\n/'
+ls -p1a | awk '{printf "%s%s",sep,$0; sep=", "} END{print ""}'
