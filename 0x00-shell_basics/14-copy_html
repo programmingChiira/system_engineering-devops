@@ -1,10 +1,2 @@
 #!/bin/bash
-
-for file in *.html; do
-  # Check if file already exists in parent directory and is newer
-  if [ -e "../$file" ] && [ "$file" -nt "../$file" ]; then
-    cp "$file" "../$file"
-    echo "Copied $file to parent directory"
-  fi
-done
-
+cp -ruv *.html ..
