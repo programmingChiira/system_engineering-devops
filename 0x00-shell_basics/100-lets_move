@@ -1,2 +1,2 @@
 #!/bin/bash
--rw-r--r-- 1 root root 0 08:15
+mv [A-Z]* /tmp/u/
