@@ -1,2 +1,8 @@
 #!/bin/bash
--rw-r--r-- 1 root root 0 /tmp/file_0.html
+
+for file in *.html
+do
+    if [ ! -f "../$file" ] || [ "$file" -nt "../$file" ]; then
+        cp "$file" "../$file"
+    fi
+done
