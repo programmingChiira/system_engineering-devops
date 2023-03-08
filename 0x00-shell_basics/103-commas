@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1Ap | awk '{printf("%s,",$0)}' | sed 's/,$/\n/' | sed 's/\.\///g' | sed 's/\.\.\///g' | tr -d '\n'
+ls -1Ap | awk '{printf("%s,",$0)}' | sed 's/,$/\n/' | sed 's/\.\///g' | sed 's/\.\.\///g' | awk 'BEGIN{ORS=" "}1' | sed 's/ $/\n/'
