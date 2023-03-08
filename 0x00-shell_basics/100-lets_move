@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir -p /tmp/u && mv [[:upper:]]* /tmp/u/
+mkdir -p /tmp/u mv [[:upper:]]* /tmp/u/
