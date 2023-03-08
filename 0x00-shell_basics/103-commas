@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap1 | sed ':a;N;$!ba;s/\n/, /g' | sed 's/,$/\n/'
+ls -ap1 | sed ':a;N;$!ba;s/\n/, /g' | sed 's/,$//' | tr '\n' ',' | sed 's/,$/\n/;s/\([^0-9a-zA-Z]\)/\\\1/g' | xargs -d , echo
