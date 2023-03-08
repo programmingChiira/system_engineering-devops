@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1apv | awk '{printf "%s%s",sep,$0; sep=","} END {print ""}'
+ls -1ap | sort -df | tr '\n' ',' | sed 's/,$/\n/'
