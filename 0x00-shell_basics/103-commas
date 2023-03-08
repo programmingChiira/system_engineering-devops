@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1ap | awk '{printf "%s, ",$0}' | sed 's/,$/\n/'
