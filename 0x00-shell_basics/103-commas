@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a -1 -v | awk '{printf("%s%s",$0, NR%2?",":"/\n")}' | sed 's/,$//'
+ls -1Ap | awk '{printf "%s%s", $0~/\/$/?$0",":$0", "}'
