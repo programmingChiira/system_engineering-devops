@@ -1,8 +1,10 @@
 #!/bin/bash
-
-for file in *.html
-do
-    if [ ! -f "../$file" ] || [ "$file" -nt "../$file" ]; then
+for file in ./*.html; do
+    if [ -e "../$file" ]; then
+        if [ "$file" -nt "../$file" ]; then
+            cp "$file" "../$file"
+        fi
+    else
         cp "$file" "../$file"
     fi
 done
