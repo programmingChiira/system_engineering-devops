@@ -1,0 +1,2 @@
+#!/bin/bash
+cp -u --recursive --no-clobber *.html ..
