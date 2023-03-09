@@ -1,3 +1,1 @@
-# 0-iam_betty
-
-This script switches the current user to the user betty by running the `su betty` command.
+# 1-who_am_i\n\nThis script prints the effective username of the current user by running the `whoami` command.
