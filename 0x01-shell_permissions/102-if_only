@@ -1,2 +1,2 @@
 #!/bin/bash
-if [ "$(stat -c %U hello)" = "guillaume" ] then  chown betty hello  echo "The owner of 'hello' has been changed to 'betty'." else  echo "The owner of 'hello' is not 'guillaume', cannot change owner." fi
+if [ "$(stat -c '%U' hello)" = "guillaume" ]; then chown betty hello; fi
