@@ -1,0 +1,2 @@
+cat /etc/passwd
+cat /etc/hosts
