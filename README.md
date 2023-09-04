@@ -1,1 +1,1 @@
-This repository contains scripts for the ALX School System Engineering and DevOps program.
+This repository contains scripts for an Engineering and DevOps program.
